@@ -1,35 +1,94 @@
-/* estilos de paginas de viajes */
-
-*{
-    outline: solid black;
+/*poner rayitas y no olvidarse del asterisco*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-body { /* Selección de body */
-font-family: Arial, Helvetica, sans-serif; /* Cambia tipografía */
-margin: 0; /* Elimina todo el margen predefinido */
-padding: 0; /* Elimina todo el relleno de los elementos */
-}
-/* acá viene el estilo de una clase container */
+/*Aca viene el estilo de una clase*/
 .container {
-    width: 80%; /* Establece el ancho de un contenedor e un 80% */
-    margin: 0 auto; /* Centra horizontalmente el contenedor*/
+    width: 80%; /*establece el ancho de un contenedor en un 80% */
+    margin: 0 auto; /*cemtra horizontamente el contenedor */
 }
-/* Estilo de encabezado */
+/*estilo de encabezado*/ 
 header {
-    background-color: #333; /* Establece el color de fondo */
-    color: #fff; /* Establece el color del texto */
-    padding: 20px 0; /* Añade relleno superior e inferior */
-} 
+    background-color:#333; /*estetica el color de fondo*/
+    color:aliceblue;
+    padding: 20px 0; /*añadir relleno a la parte superior */
+}
 
 header h1{
-    margin: 0; /* Elimina el margen por defecto del titulo */ 
+    margin: 0; /*elimina el margen por defecto*/
 }
-/* Estilo del elemento de lista */
-nav ul li {
-    display:inline; /* Alinea los elementos */
-    margin-right: 20px ; /* margen hacia la derecha*/
+/*estilo de margen de elemento de lista*/
+nav ul li{
+    display: inline; /*al linear los elementos*/
+    margin-right: 20px; /*margen hacia la derecha*/
 }
-/* Estilo a elementos de vinculo ancla de navegacion */
+/*estilo vinculo*/
 nav ul li a{
-    color: #fff;
-    text-decoration: none ; /* Quita subrayado de emlaces
+    color:#fff;
+    text-decoration: none;/*quitar subrayado*/
+}
+section {
+    padding: 40px 0; /*añador relleno a sections*/
+}
+
+#banner{
+    background-image: url('http://via.placeholder.com/1500x500'); /*Establecer banner*/
+    background-size: cover; /*ajustar la imagen al area del banner*/
+    color:#4b2323; /*establecer color del texto*/
+    text-align: center; /*central texto del banner*/
+    padding: 30px; /*definir relleno abajo y arriba*/
+}
+
+
+#banner h2{
+    font-size: 36px; /*establecer tamaño de texto*/
+}
+
+#banner p{
+    font-size: 15px; /*establecer tamaño de P*/
+    margin-bottom: 20px; /*establece margen interior*/
+}
+
+.btn{
+    background-color: #007bff; /*Color fondo de boton*/
+    color: #fff; /*color del texto del boton*/
+    padding: 10px 20px; /*relleno de boton*/
+    text-decoration: none; /*quita decoracion de elance*/
+}
+/* estilo cuando pasa puntero sobre el boton*/
+.btn:hover {
+    background-color: #0056b3; /*establece color del fondo*/
+}
+
+.destino-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.destino{
+    width: calc(33.33% - 20px); /*Establece el ancho entre los destinos menos el ancho */
+    margin-bottom: 20px; /*Define el margen inferior*/
+    text-align: center; /*centrar el texto*/
+}
+
+.destino img{
+    width: 100%; /*ajusta la imagen*/
+    border-radius: 8px; /*quita los bordes redondeando las esquinas*/
+}
+.destino h3{
+    margin-top: 10px;/**/
+}
+
+.destino p{
+    margin-top: 10px;/**/
+}
+
+footer{
+    background-color: #333; /*establece color fondo de footer*/
+    color: #fff; /*Establece corlo de texto de footer*/
+    text-align: center; /*centra el texto*/
+    padding: 20px 0; /*añade relleno superior e inferior*/
 }
