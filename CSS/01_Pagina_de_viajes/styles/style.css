@@ -1,95 +1,91 @@
-/* Estilos de pagina de viajes */
-
-*{
-    /* outline: solid black; */
-}
-body { /* Seleccion de body*/
-font-family: Arial, sans-serif ; /* Cambia tipografia*/
-margin: 0; /* Elimina todo el margen predefinido */
-padding: 0; /* Elimina todo el relleno de los elementos */
-}
-/* Acá viene eñ estilo de una clase container */
-.container {
-    width: 80%; /* Establece el ancho del contenedor en un 80% */
-    margin: 0 auto; /* Centra horizontalmente el contenedor */
-}
-/* Estilo de encabezado */
-header{
-    background-color: #333; /* Establece el color de fondo */
-    color: #fff; /* Establece el color del texto */
-    padding: 20px 0; /* Añade relleno superior e inferior */
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-header h1{
-    margin: 0; /* Elimina el margen por defecto del título */
-}
-/* Estilo de elemento de lista */
-nav ul li{
-    display: inline; /* Alinea los elementos */
-    margin-right: 20px; /* Margen hacia la derecha */
-}
-/* Estilo a elemntos de vinculo ancla de navegación */
-nav ul li a{
-    color:#fff; /* Color a elemnto Anchor */
-    text-decoration: none; /* Quitar subrayado de enalaces */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para secciones */
 section {
-    padding: 40px 0; /* Añade relleno superior e inferior*/
+    padding: 40px;
+    background-color: #fff;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-#banner{
-    background-image: url("https://via.placeholder.com/1500x500"); /* Establece la imagen de fondo de del banner*/
-    background-size: cover; /* Ajusta la imagen al área del banner */
-    color: #fff; /* Establece color del texto*/
-    text-align: center; /* Sentra el texto del banner */
-    padding: 100px 0; /* Define relleno superior e inferior */
-}
-#banner h2{
-    font-size: 36px; /* EStablece tamaño de texto h2 */
-}
-#banner p{
-    font-size: 18px; /* Establece tamaño de p */
-    margin-bottom: 20px; /* Define margen inferior */
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
 }
 
-.btn{
-    background-color: #007bff; /* Color fondo boton*/
-    color: #fff; /* Color texto del boton*/
-    padding: 10px 20px; /* Relleno del boton */
-    text-decoration: none; /* Quita decoración de enlace */
-}
-/* Estilo cuado pasa puntero sobre el boton */
-.btn:hover{
-    background-color: #0056b3; /* Establece color de fondo de fondo en hover boton */
+/* Estilos para formulario de inicio de sesión y encuesta */
+form {
+    margin-top: 20px;
 }
 
-.destinos-container{
-    display: flex; /* Utiliza flexbox para linear elemntos */
-    justify-content: space-between; /* Distribuye uniformemente los elemntos*/
-    flex-wrap: wrap; /* Si los elemntos no caben en la misma linea agrega una nueva linea con estos elemetos extras */
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
 }
 
-.destino{
-    width: calc(33.33% - 20px); /* Establece el ancho de cada destino menos el espacio entre los destinos */
-    margin-bottom: 20px; /* Define el margen inferior */
-    text-align: center; /* Centra el texto */
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
-.destino img{
-    width: 100%; /*Establece el ancho de la imagen ajustandola al elemento que la contiene*/
-    border-radius: 8px; /* Agrega esquinas redondeadas */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
-.destino h3{
-    margin-top: 10px; /* Agraga distancia entre imagen y h3 */
-}     
-.destino p{
-    margin-top: 10px; /* Agraga distancia superior entre h3 y p */
+button[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-footer{
-    background-color: #333; /* Establece color de fondo de footer */
-    text-align: center; /* Centra el texto */
-    padding: 20px 0; /* Añade relleno superior e inferior */
+/* Estilos para recomendaciones de viajes */
+.destination {
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
+
+.destination:hover {
+    trans
