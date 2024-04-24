@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Compleja</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form label, form input, form textarea, form select, form button {
+            display: block;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        form input, form textarea, form select, form button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a mi página web</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi página web. Aquí encontrarás información interesante sobre diversos temas.</p>
+            <img src="https://via.placeholder.com/600x300" alt="Imagen de ejemplo">
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>Esta es una página de ejemplo para mostrarte cómo se estructura un sitio web con HTML.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>María</td>
+                        <td>30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Desarrollo web</li>
+                <li>Diseño gráfico</li>
+                <li>Marketing digital</li>
+            </ul>
+            <p>Selecciona un servicio:</p>
+            <select>
+                <option value="web">Desarrollo web</option>
+                <option value="diseno">Diseño gráfico</option>
+                <option value="marketing">Marketing digital</option>
+            </select>
+            <button type="button">Más información</button>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos reservados © 2024</p>
+    </footer>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Viajes</title>
-    <link rel="stylesheet" href="/CSS/01_Pagina_de_viajes/styles/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,13 +13,15 @@
             <nav>
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Paquetes</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="voletos.html">voletos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+</head>
+<body>
     <header>
         <h1>Página de Recomendaciones de Viajes</h1>
     </header>
@@ -67,7 +69,7 @@
 
     <section id="recommendations" style="display: none;">
         <h2>Recomendaciones de Viajes</h2>
-        <div class="destination">
+        <div class="destination" onclick="showTickets('Destino 1')">
             <h3>Destino 1</h3>
             <p>Descripción del destino...</p>
             <div class="rating">
@@ -78,7 +80,7 @@
                 <span class="star">&#9733;</span>
             </div>
         </div>
-        <div class="destination">
+        <div class="destination" onclick="showTickets('Destino 2')">
             <h3>Destino 2</h3>
             <p>Descripción del destino...</p>
             <div class="rating">
@@ -91,12 +93,12 @@
         </div>
     </section>
 
-    <footer>
-        <p>Derechos reservados &copy; 2024</p>
-    </footer>
+    <section id="tickets" style="display: none;">
+        <h2>Comparación de Vuelos</h2>
+        <div id="ticketResults"></div>
+    </section>
 
     <script>
-        // Script para mostrar/ocultar secciones
         document.querySelector('#login form').addEventListener('submit', function(e) {
             e.preventDefault();
             document.getElementById('login').style.display = 'none';
@@ -108,6 +110,25 @@
             document.getElementById('survey').style.display = 'none';
             document.getElementById('recommendations').style.display = 'block';
         });
+
+        function showTickets(destination) {
+            const ticketResults = document.getElementById('ticketResults');
+            ticketResults.innerHTML = `Cargando vuelos para ${destination}...`;
+            
+            // Aquí puedes agregar la lógica para obtener y mostrar los vuelos reales.
+            // Por ahora, solo mostramos un mensaje de demostración.
+            setTimeout(() => {
+                ticketResults.innerHTML = `Vuelos disponibles para ${destination}:
+                <ul>
+                    <li>Vuelo Económico: $200</li>
+                    <li>Vuelo Premium: $400</li>
+                    <li>Vuelo de Lujo: $800</li>
+                </ul>`;
+            }, 2000);
+
+            const ticketsSection = document.getElementById('tickets');
+            ticketsSection.style.display = 'block';
+        }
     </script>
 </body>
 </html>
