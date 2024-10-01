@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 100px 200px; /* Ajuste de columnas para reflejar la composición */
+    grid-template-rows: 200px 100px 100px; /* Ajuste de filas para reflejar la composición */
+    gap: 0;
+    background-color: white;
+    border: 10px solid black; /* Borde negro alrededor del diseño */
+    position: relative;
+}
+
+/* Bloque rojo en la parte superior izquierda */
+.red {
+    background-color: red;
+    grid-column: 1 / 2; /* Columna 1 */
+    grid-row: 1 / 3; /* Desde la fila 1 a la fila 3 */
+}
+
+/* Bloque amarillo en la parte inferior izquierda */
+.yellow {
+    background-color: yellow;
+    grid-column: 1 / 2; /* Columna 1 */
+    grid-row: 3 / 4; /* Fila 3 */
+}
+
+/* Bloque blanco en la parte superior derecha */
+.white1 {
+    background-color: white;
+    grid-column: 2 / 3; /* Columna 2 */
+    grid-row: 1 / 2; /* Fila 1 */
+}
+
+/* Bloque blanco en la parte central derecha */
+.white2 {
+    background-color: white;
+    grid-column: 2 / 3; /* Columna 2 */
+    grid-row: 2 / 4; /* Desde la fila 2 a la fila 4 */
+}
+
+/* Bloque azul en la esquina inferior derecha */
+.blue {
+    background-color: blue;
+    grid-column: 3 / 4; /* Columna 3 */
+    grid-row: 3 / 4; /* Fila 3 */
+}
