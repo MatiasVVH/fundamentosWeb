@@ -1,66 +1,56 @@
-/* Estilos básicos para el cuerpo, aplicamos la fuente Roboto */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-/* Estilos para la barra de navegación */
 .nav {
-    display: flex; /* Alineamos los elementos de la barra en línea */
-    justify-content: space-between; /* Espaciamos el título y los enlaces */
-    align-items: center; /* Alineamos los elementos verticalmente al centro */
-    background-color: #333; /* Color oscuro de fondo */
-    padding: 10px 20px; /* Espaciado interno para la barra */
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
 }
 
-/* Estilo del título "Profile" */
 .nav-title {
-    color: white; /* Color del texto blanco */
-    font-size: 1.5rem; /* Tamaño de fuente del título */
+    color: white;
+    font-size: 1.5rem;
 }
 
-/* Estilos para los enlaces */
 .nav-links {
-    display: flex; /* Flex para que los enlaces se alineen horizontalmente */
-    list-style: none; /* Quitamos los marcadores de lista */
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
     margin-left: auto;
     align-items: center;
 }
 
-/* Espaciado entre los elementos de la lista */
 .nav-links li {
-    margin-right: 20px; /* Margen derecho para separar cada enlace */
+    margin-right: 20px;
 }
 
-/* Estilo básico para los enlaces */
 .nav-links a {
-    color: white; /* Color blanco para los enlaces */
-    text-decoration: none; /* Eliminamos el subrayado */
-    font-size: 1rem; /* Tamaño de texto consistente */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
-/* Estilo del enlace activo (negrita) */
 .nav-links a.active {
     font-weight: bold;  
 }
 
-/* Estilos del botón, manteniendo el fondo y estilo original */
 .btn {
-    background-color: #00BCE3; /* Color de fondo azul del botón */
-    color: white; /* Texto blanco */
+    background-color: #00BCE3;
+    color: white;
     border: 2px solid;
     border-color: black;
     box-shadow: 3px 3px 0px black;
-    padding: 10px 10px; /* Espaciado interno */
-    cursor: pointer; /* Cursor de mano al pasar el ratón */
-    font-size: 1rem; /* Tamaño de fuente igual al de los enlaces */
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 1rem;
     font-weight: bold; 
 }
 
-/* Cambiar el color al pasar el ratón por encima del botón */
 .btn:hover {
-    background-color: #009BB2; /* Color más oscuro en hover */
+    background-color: #009BB2;
 }
