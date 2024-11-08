@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo img {
+    height: 6dvh;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #0c0101;
+}
+
+.search-form, .search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-button {
+    background-color: #f5f5f5;
+    padding: 0 15px;
+    border: none;
+    border-radius: 9999px 0 0 9999px;
+}
+
+.search-button svg {
+    fill: #333;
+}
+
+.search-input {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 0 9999px 9999px 0;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.ingresar {
+    background-color: #d43434;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sub-header {
+    background-color: #262329;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main {
+    position: relative;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.carousel {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.carousel .dot.active {
+    opacity: 1;
+}
+
+.carousel .dot:hover {
+    background-color: #d32f2f; /* Rojo para el hover en puntos */
+}
