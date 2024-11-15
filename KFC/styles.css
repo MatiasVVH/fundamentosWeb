@@ -271,3 +271,139 @@ footer p {
     outline: none;  /* Elimina el contorno cuando se hace foco en el botón */
 }
 
+
+
+
+footer {
+    background-color: #f1f1f1; /* Puedes ajustar el color */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.padre {
+    display: flex;
+    justify-content: space-between; /* Distribuye los hijos equitativamente */
+    flex-wrap: wrap; /* Permite que los divs se ajusten en múltiples filas si no hay suficiente espacio */
+}
+
+.padre > div {
+    flex: 1; /* Permite que cada hijo ocupe un espacio igual */
+    min-width: 180px; /* Asegura que no se hagan demasiado pequeños en pantallas pequeñas */
+    margin: 10px; /* Espacio entre los elementos */
+}
+
+.hijo1, .hijo2, .hijo3, .hijo4, .hijo5 {
+    padding: 10px; /* Espacio interno de cada div hijo */
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+.hijo5 {
+    padding: 10px;
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+.hijo5 h3 {
+    text-align: center; /* Centra el título */
+}
+
+.hijo5 .imagenes {
+    display: flex;
+    flex-direction: row; /* Alinea las imágenes en una fila horizontal */
+    justify-content: center; /* Centra las imágenes */
+}
+
+.hijo5 img {
+    margin: 5px; /* Espacio entre las imágenes */
+    width: 120px; /* Ajusta el tamaño según necesites */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+footer {
+    background-color: #f1f1f1; /* Color de fondo del footer */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    position: relative; /* Necesario para posicionar el logo dentro del footer */
+    overflow: hidden; /* Asegura que no se salga ningún contenido fuera del footer */
+}
+
+.container-s {
+    position: absolute; /* Posiciona el logo en relación al footer */
+    top: 1px; /* Espacio desde la parte superior */
+    left: 10px; /* Espacio desde la parte izquierda */
+}
+
+.container-s img {
+    width: 80px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+
+
+footer {
+    background-color: #f1f1f1; /* Color de fondo del footer */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.padre {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos de manera equitativa */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a nuevas filas si no hay suficiente espacio */
+}
+
+.padre > div {
+    flex: 1;
+    min-width: 180px; /* Asegura que los divs no se hagan demasiado pequeños */
+    margin: 10px; /* Espacio entre los divs */
+}
+
+.hijo1, .hijo2, .hijo3, .hijo4, .hijo5 {
+    padding: 10px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho */
+}
+
+.container-redes-sociales {
+    width: 13%; /* Asegura que ocupe todo el ancho disponible */
+    margin-top: 10px; /* Espacio adicional entre el .hijo1 y el contenedor de redes sociales */
+}
+
+.container-redes-sociales .imagenes {
+    display: flex;
+    justify-content: center; /* Centra las imágenes */
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+.container-redes-sociales img {
+    width: 34px; /* Ajusta el tamaño de las imágenes */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+footer.bottom-text {
+    margin-bottom: 20px; /* Espacio hacia abajo */
+    text-align: center;
+    font-size: 14px; /* Ajusta el tamaño del texto */
+    color: #666666; /* Color del texto */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribuye los hijos hacia los extremos */
+    align-items: center; /* Alinea verticalmente */
+}
+
+.creditos {
+    text-align: left; /* Asegura el texto alineado a la izquierda */
+}
+
+.derechos {
+    text-align: right; /* Asegura el texto alineado a la derecha */
+}
+
+.logo-xd {
+    position: relative; /* Permite ajustar la posición del logo */
+    left: -550px; /* Mueve el logo 100px hacia la izquierda */
+}
+
+.logo-xd img {
+    width: 150px; /* Ajusta el ancho del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
