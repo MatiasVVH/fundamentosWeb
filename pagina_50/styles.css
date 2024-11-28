@@ -1,0 +1,45 @@
+.nav ul {
+    display: flex; /* Hace que los elementos hijos se alineen en fila */
+    list-style: none; /* Elimina los puntos de las listas */
+    padding: 0; /* Quita el padding predeterminado de las listas */
+    margin: 0; /* Quita el margen predeterminado */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.nav img.google {
+    margin-right: 15px; /* Da espacio entre el ícono y los botones */
+}
+
+.nav li {
+    margin: 0 10px; /* Añade espacio entre los botones */
+}
+
+.btn {
+    background-color: transparent; /* Sin fondo */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    font-size: 14px; /* Ajusta el tamaño de fuente */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Fondo ligeramente oscuro */
+    color: rgba(0, 0, 0, 0.8); /* Color del texto un poco más oscuro */
+}
+
+.titulo {
+    height: 150px;
+    font-size: 27px;
+    text-align: center; /* Centrado horizontal */
+    border: px solid black; /* Para visualizar */
+
+}
+
+.organizar {
+    color:aqua
+}
+
+.googlexd{
+    font-size: 400px;
+    border: 10px solid black; /* Para visualizar */
+}
