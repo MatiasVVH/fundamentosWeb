@@ -8,11 +8,11 @@
 }
 
 .nav img.google {
-    margin: 15px;
+    margin: 10px;
     cursor: pointer;
 }
 
-.nav img.google:hover{
+.google-img:hover{
     background-color: rgba(0, 0, 0, 0.05);
     color: rgba(0, 0, 0, 0.8);
 }
