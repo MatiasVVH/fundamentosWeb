@@ -1,45 +1,220 @@
+/* Estilo para la navegación */
 .nav ul {
-    display: flex; /* Hace que los elementos hijos se alineen en fila */
-    list-style: none; /* Elimina los puntos de las listas */
-    padding: 0; /* Quita el padding predeterminado de las listas */
-    margin: 0; /* Quita el margen predeterminado */
-    align-items: center; /* Alinea verticalmente los elementos */
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
 
 .nav img.google {
-    margin-right: 15px; /* Da espacio entre el ícono y los botones */
+    margin: 15px;
+    cursor: pointer;
 }
 
+.nav img.google:hover{
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.8);
+}
 .nav li {
-    margin: 0 10px; /* Añade espacio entre los botones */
+    margin: 0 10px;
 }
 
 .btn {
-    background-color: transparent; /* Sin fondo */
-    border: none; /* Sin bordes */
-    cursor: pointer; /* Cambia el cursor al pasar */
-    font-size: 14px; /* Ajusta el tamaño de fuente */
-    padding: 5px 10px; /* Espaciado interno */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
 }
 
 .btn:hover {
-    background-color: rgba(0, 0, 0, 0.05); /* Fondo ligeramente oscuro */
-    color: rgba(0, 0, 0, 0.8); /* Color del texto un poco más oscuro */
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.8);
 }
 
-.titulo {
+/* Estilo para el contenido principal */
+.container_1,
+.container_2,
+.container_3 {
     height: 150px;
     font-size: 27px;
-    text-align: center; /* Centrado horizontal */
-    border: px solid black; /* Para visualizar */
-
+    text-align: center;
 }
 
+/* Estilo específico para cada párrafo */
+.parrafo-1, .parrafo-2, .container_2 p, .container_3 p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Estilo para resaltar una palabra específica */
 .organizar {
-    color:aqua
+    color: rgb(0, 110, 255);
 }
 
-.googlexd{
-    font-size: 400px;
-    border: 10px solid black; /* Para visualizar */
+.informacion {
+    color: rgba(255, 17, 0, 0.774);
+}
+
+.Todos {
+    color: green;
+}
+
+.usar {
+    color: orangered;
+}
+
+/* Estilo para imagen centrada */
+.main_2 {
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el contenedor principal de botones y título */
+.container-btn {
+    display: flex;
+    flex-direction: column; /* Alinea elementos en columna */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Estilo del título */
+.container-btn h1 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilo para los botones */
+.container-boton_i,
+.container-boton_o {
+    margin: 10px 0; /* Espacio entre los botones */
+}
+
+.btn-informacion {
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-informacion:hover {
+    background-color: #0056b3;
+}
+
+.btn-mas_informacion {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.btn-mas_informacion:hover {
+    background-color: #a2c8ff; /* Azul muy claro al pasar el cursor */
+    color: rgba(32, 94, 228, 1);
+}
+
+
+}
+
+.btn-xd:hover {
+    background-color: #a2c8ff;
+    color: rgba(32, 94, 228, 1);
+}
+
+.container_1{
+    margin-top: 7%;
+}
+
+
+
+
+
+
+/* Estilo para la navegación */
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.nav img.google {
+    margin-right: 15px;
+}
+
+.nav li {
+    margin: 0 10px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo para el contenido principal */
+.container_1,
+.container_2,
+.container_3 {
+    height: 150px;
+    font-size: 27px;
+    text-align: center;
+}
+
+.parrafo-1, .parrafo-2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Estilo para los botones finales */
+.container-btn {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los botones */
+}
+
+.btn-informacion{
+
+}
+.btn-xd {
+    background-color: aliceblue;
+    border: 1px solid #000000;
+    color: #007bff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    min-width: 200px;
+}
+
+.btn-informacion:hover,
+.btn-xd:hover {
+    background-color: #0056b3;
 }
