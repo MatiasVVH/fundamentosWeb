@@ -125,7 +125,7 @@
 }
 
 
-}
+
 
 .btn-xd:hover {
     background-color: #a2c8ff;
@@ -198,9 +198,9 @@
     gap: 20px; /* Espacio entre los botones */
 }
 
-.btn-informacion{
 
-}
+
+
 .btn-xd {
     background-color: aliceblue;
     border: 1px solid #000000;
@@ -217,4 +217,50 @@
 .btn-informacion:hover,
 .btn-xd:hover {
     background-color: #0056b3;
+}
+.container-btn h1{
+    font-size: 350%;
+}
+
+
+
+/* Estilo general para centrar las imágenes y ajustarlas */
+.container-two_img {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px 0;
+}
+
+.container-two_img img {
+    width: 460px;  /* Ajusta el tamaño ancho */
+    height: auto;  /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra para más estilo */
+    font-family: 'Baloo 2', sans-serif;
+}
+
+
+
+
+
+.btn-one p{
+    width: 460px;  /* Ajusta el tamaño ancho */
+
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 25px;
+}
+
+
+
+.btn-two p{
+    width: 460px;  /* Ajusta el tamaño ancho */
+
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 25px;
 }
