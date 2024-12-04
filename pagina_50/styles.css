@@ -264,3 +264,72 @@
     font-family: 'Baloo 2', sans-serif;
     font-size: 25px;
 }
+
+
+
+.container-btn_u{
+    margin-left: 285px; /* Lo mueve 50px a la derecha */ 
+    margin-top: 90px;
+}
+
+
+.h1-1{
+    font-size: 54px;
+    font-family: 'Baloo 2', sans-serif;
+    margin-left: 50px; /* Lo mueve 50px a la derecha */
+    margin: 0%;
+
+}
+
+
+.container-h1_2 h1 {
+    font-size: 54px;
+    margin: 0%;
+    font-family: 'Baloo 2', sans-serif;
+    transform: translateX(-73px); /* Mueve el elemento hacia la izquierda */
+}
+
+
+
+
+
+
+.h1-3{
+    font-size: 54px;
+    font-family: 'Baloo 2', sans-serif;
+    margin: 0%;
+    transform: translateX(30px); /* Mueve el elemento hacia la izquierda */
+}
+
+
+
+/* Estilo para el contenedor del botón */
+.btn-azull {
+    margin-left: 285px; /* Mueve el botón 285px a la derecha */
+    margin-top: 90px;   /* Mueve el botón 90px hacia abajo */
+}
+
+/* Estilo visual del botón igual al .btn-informacion */
+.btn-azull button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white;              /* Color del texto blanco */
+    border: none;              /* Sin borde */
+    padding: 15px 30px;        /* Espaciado interno */
+    font-size: 16px;           /* Tamaño de fuente */
+    cursor: pointer;           /* Cursor de mano al pasar */
+}
+
+/* Efecto hover para cambiar el color cuando el usuario pase el mouse */
+.btn-azull button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+
+
+
+
+
+.parrafo-2 button{
+    background-color: none;
+    color: #007BFF;
+}
